@@ -56,7 +56,6 @@ public class FirstTest {
        // pause(2);
 
 
-
     }
     public static void pause(int time){
         try {

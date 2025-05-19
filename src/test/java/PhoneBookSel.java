@@ -41,6 +41,5 @@ public class PhoneBookSel {
         WebElement btnRegistration = driver.findElement(By.cssSelector("*[name='registration']"));
         btnRegistration.click();
 
-
     }
 }
