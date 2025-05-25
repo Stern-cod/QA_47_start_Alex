@@ -18,6 +18,10 @@ public class PhoneBookSel {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         FirstTest.pause(2);
+        WebElement btnHome = driver.findElement(By.cssSelector("a[aria-current='page']"));
+        btnHome.click();
+
+        FirstTest.pause(2);
         WebElement btnAbout = driver.findElement(By.cssSelector("*[href='/about']"));
         btnAbout.click();
 
@@ -26,7 +30,7 @@ public class PhoneBookSel {
         System.out.println(textAbout.getText());
 
         FirstTest.pause(2);
-        WebElement btnLogin = driver.findElement(By.cssSelector("*[href='/login']"));
+        WebElement btnLogin = driver.findElement(By.cssSelector("div[class='navbar-component_nav__1X_4m'] a:nth-child(4)"));
         btnLogin.click();
 
         FirstTest.pause(2);
@@ -38,8 +42,9 @@ public class PhoneBookSel {
         inputPass.sendKeys("Res4555jk");
 
         FirstTest.pause(2);
-        WebElement btnRegistration = driver.findElement(By.cssSelector("*[name='registration']"));
-        btnRegistration.click();
+       // WebElement btnRegistration = driver.findElement(By.cssSelector("*[name='registration']"));
+       // btnRegistration.click();
+        driver.quit();
 
     }
 }

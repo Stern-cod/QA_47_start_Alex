@@ -51,9 +51,9 @@ public class FirstTest {
         inputPass.sendKeys("*[Rtt678!f3");
         pause(2);
 
-       // WebElement inputCheckBox = driver.findElement(By.cssSelector("*[type='checkbox']"));
-       // inputCheckBox.click();
-       // pause(2);
+       //WebElement inputCheckBox = driver.findElement(By.cssSelector("*[id='terms-of-use']"));
+       //inputCheckBox.click();
+       //pause(2);
 
 
     }
